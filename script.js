@@ -46,10 +46,10 @@ function adicionarTarefa(){
             concluida: false
         });
     }else{
-        alert('');
+        alert('Digite para adicionar um item.');
     }
 
-    inputElement.value = 'Digite para adicionar um item.';
+    inputElement.value = '';
 
     salvarTarefa();
     renderTarefa();
@@ -116,3 +116,4 @@ inputElement.addEventListener('keypress', (event) => {
     }
 
 })
+
