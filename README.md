@@ -6,10 +6,12 @@ A simple and elegant Shopping List application built with pure HTML, CSS, and Ja
 
 ---
 
-## Screenshot
-
-![App Screenshot01](./assets/screenshot01.png) 
-![App Screenshot02](./assets/screenshot02.png) 
+<table>
+  <tr>
+    <td><img src="./assets/screenshot01.png" alt="App Screenshot 01" width="100%"></td>
+    <td><img src="./assets/screenshot02.png" alt="App Screenshot 02" width="100%"></td>
+  </tr>
+</table>
 
 ---
 
