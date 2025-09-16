@@ -213,7 +213,6 @@ input[type="text"]::placeholder{
 
     #container{
         margin-top: 40px;;
-        height: auto;
         height: 100%;
         max-height: 100dvh;
         max-width: 85%;
@@ -263,6 +262,7 @@ input[type="text"]::placeholder{
 
 
     
+
 
 
 
