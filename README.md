@@ -1,2 +1,71 @@
-# Shopping-List-App
-A simple and elegant Shopping List application built with pure HTML, CSS, and JavaScript. This project features dynamic list management, persistent storage using localStorage, custom-styled UI components, and a fully responsive design for a seamless experience on both desktop and mobile devices.
+# Shopping List App 🛒
+
+A simple and elegant Shopping List application built with pure HTML, CSS, and JavaScript. This project allows users to add, delete, and mark items as complete, with all data persistently stored in the browser's `localStorage`.
+
+**[Live Demo](https://your-username.github.io/your-repo-name/)** 👈 (Replace with your GitHub Pages link)
+
+---
+
+## Screenshot
+
+![App Screenshot01](./assets/screenshot01.png) 
+![App Screenshot02](./assets/screenshot02.png) 
+
+---
+
+## Features
+
+-   **Add Items:** Easily add new items to your shopping list via the input field.
+-   **Delete Items:** Remove items with a single click on the trash can icon.
+-   **Mark as Complete:** Click the custom-styled checkbox to toggle a strike-through style on items.
+-   **Persistent Storage:** Your list is automatically saved in your browser using `localStorage`, so your items will be there when you return.
+-   **Responsive Design:** The layout is fully responsive and provides a great user experience on both desktop and mobile screens.
+-   **User Feedback:** A smooth, animated alert notifies the user when an item has been deleted.
+-   **Modern UI:** Features custom-styled form elements and a clean, intuitive interface.
+
+---
+
+## Technologies Used
+
+This project was built using core web technologies, without any frameworks or libraries.
+
+-   **HTML5:** For the structure and content of the application.
+-   **CSS3:** For all styling, including Flexbox for layout, custom properties for theming, transitions for animations, and media queries for responsiveness.
+-   **JavaScript (ES6+):** For all application logic, including DOM manipulation, event handling, and interaction with `localStorage`.
+
+---
+
+## How to Use
+
+To run this project locally, simply follow these steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    ```
+
+2.  **Navigate to the project directory:**
+    ```bash
+    cd your-repo-name
+    ```
+
+3.  **Open the `index.html` file in your browser.**
+4.  
+
+---
+
+## File Structure
+
+```
+.
+├── assets/
+│   ├── icon-delete.svg
+│   └── AlertSquare.svg
+├── index.html
+├── script.js
+└── style.css
+```
+-   `index.html`: The main HTML file containing the structure of the app.
+-   `style.css`: Contains all the styles for the application.
+-   `script.js`: Contains all the application logic.
+-   `assets/`: A directory for storing static assets like icons.
