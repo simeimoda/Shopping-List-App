@@ -2,7 +2,7 @@
 
 A simple and elegant Shopping List application built with pure HTML, CSS, and JavaScript. This project allows users to add, delete, and mark items as complete, with all data persistently stored in the browser's `localStorage`.
 
-**[Live Demo](https://your-username.github.io/your-repo-name/)** 👈 (Replace with your GitHub Pages link)
+**[Live Demo](https://simeimoda.github.io/Shopping-List-App/)** 👈 (Replace with your GitHub Pages link)
 
 ---
 
