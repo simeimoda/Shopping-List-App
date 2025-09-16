@@ -43,31 +43,15 @@ To run this project locally, simply follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    git clone https://github.com/simeimoda/Shopping-List-App.git
     ```
 
 2.  **Navigate to the project directory:**
     ```bash
-    cd your-repo-name
-    ```
+    cd Shopping-List-App
+    
 
-3.  **Open the `index.html` file in your browser.**
-4.  
+3.  **Open the `index.html` file in your browser.** 
 
 ---
 
-## File Structure
-
-```
-.
-├── assets/
-│   ├── icon-delete.svg
-│   └── AlertSquare.svg
-├── index.html
-├── script.js
-└── style.css
-```
--   `index.html`: The main HTML file containing the structure of the app.
--   `style.css`: Contains all the styles for the application.
--   `script.js`: Contains all the application logic.
--   `assets/`: A directory for storing static assets like icons.
