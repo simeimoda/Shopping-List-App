@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    --background: #f4f5fb;
+    --white: #ffffff;
+    --border: #cecece;
+    --color-brand: #9038ca;
+    --color-brand-hover: #60228a;
+
+    background-color: var(--background);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#container{
+    height: 770px;
+    width: 100%;
+    max-width: 750px;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.input-area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 35px;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #3a3a3a;
+}
+
+input[type="text"]{
+    flex-grow: 3;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--border);    
+}
+
+input[type="text"]:focus{
+    outline-color: var(--color-brand-hover);
+}
+
+input[type="text"]::placeholder{
+    opacity: 0.7;
+}
+
+.add-button{
+    flex-grow: 1;
+    height: 50px;
+    background-color: var(--color-brand);
+    border-radius: 15px;
+    color: var(--white);
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+.add-button:hover{
+    background-color: var(--color-brand-hover);
+    cursor: pointer;
+}
+
+.add-button:focus{
+    outline: none;
+}
+
+.list{
+    width: 100%;
+    max-width: 750px;
+    height: 450px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 28px;   
+    padding: 0 3px;
+}
+
+.li-element{
+    position: relative;
+    background-color:var(--white);
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 7px 0;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #d8d8d8;   
+}
+    
+.texto{
+    color: #000000;
+    white-space: nowrap;     
+    overflow: hidden;       
+    text-overflow: ellipsis;
+}
+
+.texto.checked {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-button{
+  margin-left: auto;
+  margin-right: 20px;
+  width: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.checkbox-element{
+    opacity: 0;      /* Checkbox original escondido */
+    width: 20px;        
+    height: 20px;       
+    position: absolute;
+    margin-left: 15px;
+}
+
+.checkbox-element + .texto::before {
+    content: ''; 
+    display: inline-block; 
+    
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    
+    margin: 0 15px; 
+    vertical-align: middle; 
+}
+
+.checkbox-element:checked + .texto::before{
+    content: '✓';
+    line-height: 23px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--color-brand);
+    border: none;
+    width: 23px;
+    height: 23px;
+}
+
+.alert{
+    background-color: #c93847;
+    width: 100%;
+    max-width: 750px;
+    height: 60px;
+    border-radius: 15px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+
+    opacity:0;
+    visibility: hidden;
+    transform: translateY(-30px);
+
+    transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s;
+}
+
+.alert.alert-visible{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.alert-icon{
+    width: 35px;
+}
+
+.alert-text{
+    color: var(--white);
+    margin-left: 20px;
+}
+
+
+@media(max-width:500px){
+    
+    *{
+        font-size: 16px;
+    }
+
+    body{
+        height: auto;
+        overflow: hidden;
+    }
+
+    #container{
+        margin-top: 40px;;
+        height: auto;
+        min-height: 100dvh;
+        max-width: 85%;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    .input-area{
+        flex-direction: column;
+    }
+
+    input[type="text"]{
+        width: 100%;
+        max-width: 450px;
+        height: 45px;
+    }
+
+    .add-button{
+        width: 100%;
+        max-width: 450px;
+        height: 45px;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .list{
+        height: 450px;
+        overflow-y: auto;
+    }
+
+    .alert{
+        position: absolute;
+        bottom: 45px;
+        height: 45px;
+        width: 90%;
+    }
+
+    .alert-icon{
+        width: 30px;
+    }
+}
+
+
+
+
+
+    
+
+
+
+
+
+
+
