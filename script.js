@@ -46,10 +46,10 @@ function adicionarTarefa(){
             concluida: false
         });
     }else{
-        alert('Digite algo para adicionar uma tarefa.');
+        alert('');
     }
 
-    inputElement.value = '';
+    inputElement.value = 'Digite para adicionar um item.';
 
     salvarTarefa();
     renderTarefa();
@@ -114,4 +114,5 @@ inputElement.addEventListener('keypress', (event) => {
     if(event.key === 'Enter'){
         adicionarTarefa();
     }
+
 })
